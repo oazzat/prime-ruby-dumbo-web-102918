@@ -11,12 +11,11 @@ def prime? (num)
     else
       prev_num.push(int)
       
-      if int != prev
+      
       prev_num.each do |prev|
-        if int%prev == 0
+        if int%prev == 0 && int != prev
           return false
         end
-      end
       end
     end
   end
