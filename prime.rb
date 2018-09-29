@@ -4,7 +4,7 @@ def prime? (num)
   
   if num < 0 
     return false
-  
+  end
   
   array.each do |int|
     if num % int == 0
