@@ -2,7 +2,7 @@ def prime? (num)
 
   array = *(1..num)
   
-  if num < 0 
+  if num < 1 
     return false
   end
   
