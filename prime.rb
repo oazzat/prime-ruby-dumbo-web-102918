@@ -6,6 +6,8 @@ def prime? (num)
   array.each do |int|
     
     if int == 1
+    elsif int == 2
+      prev_num.push(2)
     else
       prev_num.push(int)
       prev_num.each do |prev|
