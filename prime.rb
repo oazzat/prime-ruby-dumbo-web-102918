@@ -10,10 +10,13 @@ def prime? (num)
       prev_num.push(2)
     else
       prev_num.push(int)
+      
+      if int != prev
       prev_num.each do |prev|
         if int%prev == 0
           return false
         end
+      end
       end
     end
   end
