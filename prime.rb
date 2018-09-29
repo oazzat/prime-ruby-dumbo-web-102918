@@ -1,7 +1,10 @@
 def prime? (num)
 
   array = *(1..num)
-  prev_num = []
+  
+  if num < 0 
+    return false
+  
   
   array.each do |int|
     if num % int == 0
