@@ -8,8 +8,10 @@ def prime? (num)
   
   array.each do |int|
     if num % int == 0
-      if int > 1 || num != 2
-        return false
+      if int > 1
+        if num !=2
+          return false
+        end
       end
     end
         
