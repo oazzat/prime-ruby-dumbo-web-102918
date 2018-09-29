@@ -4,22 +4,14 @@ def prime? (num)
   prev_num = []
   
   array.each do |int|
-    
-    if int == 1
-    elsif int == 2
-      prev_num.push(2)
-    else
-      prev_num.push(int)
-      
-      
-      prev_num.each do |prev|
-        if int%prev == 0 
-          if int != prev
-            return false
-          end
-        end
+    if num % int == 0
+      if int > 1
+        return false
       end
     end
+        
   end
+  
+  
 return true
 end
