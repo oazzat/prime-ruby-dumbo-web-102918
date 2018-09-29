@@ -13,8 +13,10 @@ def prime? (num)
       
       
       prev_num.each do |prev|
-        if int%prev == 0 && int != prev
-          return false
+        if int%prev == 0 
+          if int != prev
+            return false
+          end
         end
       end
     end
